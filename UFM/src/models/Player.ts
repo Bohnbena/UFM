@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const Player = defineStore('player', {
     state: () => ({
-        name: 'Held',
+        name: '',
         money: 0,
     }),
     getters: {
