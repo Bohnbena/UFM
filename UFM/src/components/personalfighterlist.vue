@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import {FightersList} from "@/models/Fighters.ts";
 import {Player} from "@/models/Player.ts";
-const fightersList = FightersList()
 const player = Player()
-
 </script>
 
 <template>
@@ -22,7 +19,7 @@ const player = Player()
       </li>
     </ul>
     <ul>
-      <li v-for="fighter in fightersList.getFighters" :key="fighter.id" class="grid grids gap-4 py-1 border-b border-gray-100">
+      <li v-for="fighter in player.getFighters" :key="fighter.id" class="grid grids gap-4 py-1 border-b border-gray-100">
         <span>{{ fighter.id }}</span>
         <span>{{ fighter.name }}</span>
         <span>{{ fighter.lastname }}</span>
@@ -30,7 +27,7 @@ const player = Player()
         <span>{{ fighter.age }}</span>
         <span>{{ fighter.country }}</span>
         <span>{{ fighter.style }}</span>
-        <button class="bg-red-600 w-15 flex justify-center text-white font-bold" @click="player.addFighter(fighter)">Sign</button>
+        <button class="bg-red-600 w-15 flex justify-center text-white font-bold" @click="player.removeFighter(String(fighter.id))">Unsign</button>
       </li>
     </ul>
   </div>
