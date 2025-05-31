@@ -19,7 +19,7 @@ export const Player = defineStore('player', {
             this.fighters.push(fighter);
         },
         removeFighter(fighterId: string) {
-            this.fighters = this.fighters.filter(f => f.id !== fighterId);
+
         },
         setName(name: string) {
             this.name = name;
