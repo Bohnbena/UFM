@@ -14,5 +14,4 @@ pinia.use(piniaPluginPersistedstate)  // Plugin VOR app.use(pinia) registrieren
 
 app.use(pinia)        // DIESE Pinia-Instanz verwenden
 app.use(router)
-
 app.mount('#app')
