@@ -11,8 +11,19 @@ const player = Player()
     <div class="ml-5">
       <namebox v-if="player.getName == '' "></namebox>
     </div>
-    <div>
-      <p> {{ player.getName }} </p>
+    <div class="flex gap-3">
+      <div>
+        <p>Name</p>
+        <p> {{ player.getName }} </p>
+      </div>
+      <div>
+        <p>Money</p>
+        <p> {{ player.getMoney}}€</p>
+      </div>
+      <div>
+        <p>Followers</p>
+        <p> {{ player.getFollowers }}</p>
+      </div>
     </div>
   </main>
 </template>
