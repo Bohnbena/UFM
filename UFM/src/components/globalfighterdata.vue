@@ -30,7 +30,7 @@ const player = Player()
         <span>{{ fighter.age }}</span>
         <span>{{ fighter.country }}</span>
         <span>{{ fighter.style }}</span>
-        <button class="bg-red-600 w-15 flex justify-center text-white font-bold" @click="player.addFighter(fighter)">Sign</button>
+        <button class="bg-red-600 w-15 flex justify-center text-white font-bold" @click="player.addFighter(fighter); fightersList.removeFighter(String(fighter.id))">Sign</button>
       </li>
     </ul>
   </div>

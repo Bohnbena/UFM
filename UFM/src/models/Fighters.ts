@@ -24,7 +24,7 @@ export const FightersList = defineStore('FightersList', {
             this.fighters.push(fighter);
         },
         removeFighter(fighterId: string) {
-
+            this.fighters = this.fighters.filter(fighter => fighter.id.toString() !== fighterId);
         },
     }
 })

@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import {Player} from "@/models/Player.ts";
+import {FightersList} from "@/models/Fighters.ts";
+
+const fightersList = FightersList()
 const player = Player()
 </script>
 
@@ -27,7 +30,7 @@ const player = Player()
         <span>{{ fighter.age }}</span>
         <span>{{ fighter.country }}</span>
         <span>{{ fighter.style }}</span>
-        <button class="bg-red-600 w-15 flex justify-center text-white font-bold" @click="player.removeFighter(String(fighter.id))">Unsign</button>
+        <button class="bg-red-600 w-15 flex justify-center text-white font-bold" @click="player.removeFighter(String(fighter.id)); fightersList.addFighter(fighter)">Unsign</button>
       </li>
     </ul>
   </div>
