@@ -1,0 +1,17 @@
+import { defineStore } from "pinia";
+
+export const Player = defineStore('player', {
+    state: () => ({
+        name: 'Held',
+        money: 0,
+    }),
+    getters: {
+        getName: (state) => state.name,
+        getMoney: (state) => state.money,
+    },
+    actions: {
+        setName(name: string) {
+            this.name = name;
+        },
+    }
+})
