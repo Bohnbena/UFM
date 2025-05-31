@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Liam",
+    "surname": "Garcia",
+    "age": 28,
+    "style": "Boxer",
+    "country": "USA"
+  },
+  {
+    "id": 2,
+    "name": "Noah",
+    "surname": "Kovacs",
+    "age": 25,
+    "style": "Muay Thai",
+    "country": "Ungarn"
+  },
+  {
+    "id": 3,
+    "name": "Mia",
+    "surname": "Tanaka",
+    "age": 22,
+    "style": "Jiu-Jitsu",
+    "country": "Japan"
+  },
+  {
+    "id": 4,
+    "name": "Elias",
+    "surname": "Schmidt",
+    "age": 30,
+    "style": "Muay Thai",
+    "country": "Deutschland"
+  },
+  {
+    "id": 5,
+    "name": "Sofia",
+    "surname": "Martinez",
+    "age": 27,
+    "style": "Boxer",
+    "country": "Spanien"
+  },
+  {
+    "id": 6,
+    "name": "Jonas",
+    "surname": "Kim",
+    "age": 26,
+    "style": "Jiu-Jitsu",
+    "country": "Südkorea"
+  },
+  {
+    "id": 7,
+    "name": "Emily",
+    "surname": "Nguyen",
+    "age": 24,
+    "style": "Muay Thai",
+    "country": "Vietnam"
+  },
+  {
+    "id": 8,
+    "name": "Leon",
+    "surname": "Meier",
+    "age": 29,
+    "style": "Boxer",
+    "country": "Schweiz"
+  },
+  {
+    "id": 9,
+    "name": "Nina",
+    "surname": "Petrova",
+    "age": 23,
+    "style": "Jiu-Jitsu",
+    "country": "Russland"
+  },
+  {
+    "id": 10,
+    "name": "David",
+    "surname": "Hernandez",
+    "age": 31,
+    "style": "Muay Thai",
+    "country": "Mexiko"
+  }
+]

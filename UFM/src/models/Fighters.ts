@@ -1,19 +1,14 @@
-// Kämpfer Model
 import {defineStore} from "pinia";
+import fightersjson from '@/assets/fighters_100.json';
 
 export type Fighter = {
     id: number;
     name: string;
+    lastname: string;
     level: number;
-    health: number;
-    attack: number;
-    defense: number;
-    speed: number;
-    experience: number;
-    maxExperience: number;
-    money: number;
-    skills: string[];
-    isActive: boolean; // Indicates if the fighter is currently active in the team
+    age: number
+    country: string;
+    style: 'Boxer' | 'Muay Thai' | 'Jiu-Jitsu';
 }
 
 export const FightersList = defineStore('FightersList', {
@@ -34,19 +29,16 @@ export const FightersList = defineStore('FightersList', {
     }
 })
 
-export function GenerateFighter(): Fighter {
-    return {
-        id: Date.now(),
-        name: "Test Fighter",
-        level: 1,
-        health: 100,
-        attack: 10,
-        defense: 5,
-        speed: 5,
-        experience: 0,
-        maxExperience: 100,
-        money: 0,
-        skills: [],
-        isActive: false,
+export function JsonFighters() {
+    for (const fighter of fightersjson) {
+        FightersList().addFighter({
+            id: fighter.id,
+            name: fighter.name,
+            lastname: fighter.lastname,
+            level: fighter.level,
+            age: fighter.age,
+            country: fighter.country,
+            style: fighter.style as 'Boxer' | 'Muay Thai' | 'Jiu-Jitsu',
+        });
     }
 }
