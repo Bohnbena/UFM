@@ -4,7 +4,6 @@ import namebox from '@/components/namebox.vue'
 
 const player = Player()
 
-
 </script>
 
 <template>
