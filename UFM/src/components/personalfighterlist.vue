@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import {Player} from "@/models/Player.ts";
 import {FightersList} from "@/models/Fighters.ts";
+import {ref} from "vue";
 
 const fightersList = FightersList()
 const player = Player()
+const figherDataMenu = ref(false);
 </script>
 
 <template>
@@ -18,11 +20,11 @@ const player = Player()
         <span>Alter</span>
         <span>Land</span>
         <span>Stil</span>
-        <span class="bg-green-500 w-15 flex justify-center">Hide</span>
+        <span class="bg-green-500 w-15 flex justify-center" @click="figherDataMenu = !figherDataMenu">Hide</span>
       </li>
     </ul>
     <ul>
-      <li v-for="fighter in player.getFighters" :key="fighter.id" class="grid grids gap-4 py-1 border-b border-gray-100">
+      <li v-show="figherDataMenu" v-for="fighter in player.getFighters" :key="fighter.id"  class="grid grids gap-4 py-1 border-b border-gray-100">
         <span>{{ fighter.id }}</span>
         <span>{{ fighter.name }}</span>
         <span>{{ fighter.lastname }}</span>

@@ -4,7 +4,7 @@ import type {Fighter} from '@/models/Fighters.ts';
 export const Player = defineStore('player', {
     state: () => ({
         name: '',
-        money: 0,
+        money: 1500,
         followers: 0,
         fighters: [] as Fighter[],
     }),

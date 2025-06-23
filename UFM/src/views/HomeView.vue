@@ -14,7 +14,6 @@ const fightersList = FightersList()
 fightersList.$reset()
 const fightersData = JsonFighters()
 
-
 player.$reset()
 </script>
 
@@ -25,7 +24,6 @@ player.$reset()
       <div class="ml-5">
         <namebox v-if="player.getName == '' "></namebox>
       </div>
-
       <div class="flex gap-3">
         <div>
           <p>Name</p>
